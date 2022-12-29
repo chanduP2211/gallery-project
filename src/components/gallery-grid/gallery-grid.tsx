@@ -25,6 +25,7 @@ export class GalleryGrid {
   cancelable: true,
   bubbles: true}) dataShowed:EventEmitter
 
+  //branch1
   render() {
     return (
       <Host>
