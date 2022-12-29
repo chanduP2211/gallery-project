@@ -45,6 +45,7 @@ z-index: 1;
 }
 .parent2::-webkit-scrollbar {
   display: none; 
+/* ddfs */
 }
 .child{
   width: 180px;
