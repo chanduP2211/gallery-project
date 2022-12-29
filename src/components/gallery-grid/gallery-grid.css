@@ -43,6 +43,9 @@ z-index: 1;
   text-align: center;
   overflow-x: scroll;
 }
+.parent2::-webkit-scrollbar {
+  display: none; 
+}
 .child{
   width: 180px;
   height: 100px;
