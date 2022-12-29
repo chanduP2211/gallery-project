@@ -29,6 +29,7 @@ export class GalleryGrid {
   render() {
     return (
       <Host>
+      <div class='parent'></div>
       <div class='baseParent'>
       <div class='cancel' onClick={()=>this.dataShowed.emit("cancel")}>
           <span >x</span>
@@ -55,6 +56,7 @@ export class GalleryGrid {
          </div>
        
          </div>
+        
       </Host>
     );
   }

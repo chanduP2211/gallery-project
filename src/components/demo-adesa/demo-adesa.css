@@ -37,6 +37,12 @@ p{
   font-size: 50px;
   color: red;
 }
+button{
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  font-size: 14px;
+  border: none;
+}
 h1{
   display: flex;
   column-gap: 20px;
