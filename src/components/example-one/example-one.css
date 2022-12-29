@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  margin: 10% 20%;
+}
+.parent{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+.child{
+  display: grid;
+  grid-template-columns: 100px 150px;
+}
