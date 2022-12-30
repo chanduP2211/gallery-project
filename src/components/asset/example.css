@@ -1,0 +1,7 @@
+:host{
+    --blue-color:rgb(235, 235, 0);
+    --grid:grid;
+    --font-size:40px;
+    --cursor:pointer;
+    --size:100%;
+}
