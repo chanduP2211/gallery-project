@@ -5,7 +5,7 @@
   margin: 0px 50px;
 }
 .hide{
-  display: none;
+  display: var(--none);
 }
 .gallery{
   position: absolute;
@@ -15,14 +15,14 @@
   z-index: 100;
 }
 select{
-  width: 100%;
+  width: var(--size);
   padding: 10px;
   margin-bottom: 10px;
 }
 .imag{
   display: var(--grid);
   grid-template-rows: 1fr 0.2fr;
-  cursor: pointer;
+  cursor: var(--cursor);
 }
 .logout{
 display: var(--grid);
@@ -42,7 +42,7 @@ button{
   color: rgb(255, 255, 255);
   background-color: blue;
   font-size: 14px;
-  border: none;
+  border: var(--none);
 }
 h1{
   display: flex;
@@ -54,7 +54,7 @@ h1{
   margin-block-end:0;
 }
 li{
-  list-style: none;
+  list-style: var(--none);
 }
 .child1{
 display: var(--grid);
