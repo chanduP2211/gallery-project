@@ -16,47 +16,47 @@ export class LoginPage {
   @Element() el:HTMLElement;
 
 
-  connectedCallback(){ // onde time 
-    alert("connectedCallback called")
-    console.log("connectedCallback called")
-  }
-  componentWillLoad(){  //one time
-    alert("componentWillLoad called")
-    console.log("componentWillLoad called")
-  }
-  componentWillRender(){  //
-    alert("componentWillRender called")
-    console.log("componentWillRender called")
-  }
-  componentDidRender(){
-    alert("componentDidRender called")
-    console.log("componentDidRender called")
-  }
-  componentDidLoad(){
-    alert("componentDidLoad called")
-    console.log("componentDidLoad called");
-    (this.el.shadowRoot.querySelector('button') as HTMLButtonElement).style.backgroundColor = 'green'
-  }
-  componentShouldUpdate(){
-    alert("componentShouldUpdate called")
-    console.log("componentShouldUpdate called")
-  }
-  componentWillUpdate(){
-    alert("componentWillUpdate called")
-    console.log("componentWillUpdate called")
-  }
-  componentDidUpdate(){
+  // connectedCallback(){ // onde time 
+  //   alert("connectedCallback called")
+  //   console.log("connectedCallback called")
+  // }
+  // componentWillLoad(){  //one time
+  //   alert("componentWillLoad called")
+  //   console.log("componentWillLoad called")
+  // }
+  // componentWillRender(){  //
+  //   alert("componentWillRender called")
+  //   console.log("componentWillRender called")
+  // }
+  // componentDidRender(){
+  //   alert("componentDidRender called")
+  //   console.log("componentDidRender called")
+  // }
+  // componentDidLoad(){
+  //   alert("componentDidLoad called")
+  //   console.log("componentDidLoad called");
+  //   (this.el.shadowRoot.querySelector('button') as HTMLButtonElement).style.backgroundColor = 'green'
+  // }
+  // componentShouldUpdate(){
+  //   alert("componentShouldUpdate called")
+  //   console.log("componentShouldUpdate called")
+  // }
+  // componentWillUpdate(){
+  //   alert("componentWillUpdate called")
+  //   console.log("componentWillUpdate called")
+  // }
+  // componentDidUpdate(){
     
-    alert("componentDidUpdate called")
-    console.log("componentDidUpdate called");
+  //   alert("componentDidUpdate called")
+  //   console.log("componentDidUpdate called");
 
-    (this.el.shadowRoot.querySelector('button') as HTMLButtonElement).style.backgroundColor = 'red'
+  //   (this.el.shadowRoot.querySelector('button') as HTMLButtonElement).style.backgroundColor = 'red'
     
-  }
-  disconnectedCallback(){
-    alert("disconnectedCallback called")
-    console.log("disconnectedCallback called")
-  }
+  // }
+  // disconnectedCallback(){
+  //   alert("disconnectedCallback called")
+  //   console.log("disconnectedCallback called")
+  // }
   render() {
     alert("render called")
     console.log("render called")
@@ -92,7 +92,7 @@ export class LoginPage {
     ) 
     return (
       <Host>
-       {this.component}
+          {this.component}
       </Host>
     );
   }
