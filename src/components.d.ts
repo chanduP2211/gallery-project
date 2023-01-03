@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface DemoAdesa {
+        "user": string;
     }
     interface DemoStory {
         "city": string;
@@ -20,6 +21,8 @@ export namespace Components {
     interface ExampleTwo {
     }
     interface GalleryGrid {
+    }
+    interface LoginPage {
     }
     interface MyComponent {
         "backgroundColor": string;
@@ -69,6 +72,12 @@ declare global {
         prototype: HTMLGalleryGridElement;
         new (): HTMLGalleryGridElement;
     };
+    interface HTMLLoginPageElement extends Components.LoginPage, HTMLStencilElement {
+    }
+    var HTMLLoginPageElement: {
+        prototype: HTMLLoginPageElement;
+        new (): HTMLLoginPageElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -82,11 +91,13 @@ declare global {
         "example-third": HTMLExampleThirdElement;
         "example-two": HTMLExampleTwoElement;
         "gallery-grid": HTMLGalleryGridElement;
+        "login-page": HTMLLoginPageElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
     interface DemoAdesa {
+        "user"?: string;
     }
     interface DemoStory {
         "city"?: string;
@@ -102,6 +113,8 @@ declare namespace LocalJSX {
     interface GalleryGrid {
         "onDataShowed"?: (event: GalleryGridCustomEvent<any>) => void;
     }
+    interface LoginPage {
+    }
     interface MyComponent {
         "backgroundColor"?: string;
         "first"?: string;
@@ -115,6 +128,7 @@ declare namespace LocalJSX {
         "example-third": ExampleThird;
         "example-two": ExampleTwo;
         "gallery-grid": GalleryGrid;
+        "login-page": LoginPage;
         "my-component": MyComponent;
     }
 }
@@ -128,6 +142,7 @@ declare module "@stencil/core" {
             "example-third": LocalJSX.ExampleThird & JSXBase.HTMLAttributes<HTMLExampleThirdElement>;
             "example-two": LocalJSX.ExampleTwo & JSXBase.HTMLAttributes<HTMLExampleTwoElement>;
             "gallery-grid": LocalJSX.GalleryGrid & JSXBase.HTMLAttributes<HTMLGalleryGridElement>;
+            "login-page": LocalJSX.LoginPage & JSXBase.HTMLAttributes<HTMLLoginPageElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
