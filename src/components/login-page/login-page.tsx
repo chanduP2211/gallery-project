@@ -16,15 +16,15 @@ export class LoginPage {
   @Element() el:HTMLElement;
 
 
-  connectedCallback(){
+  connectedCallback(){ // onde time 
     alert("connectedCallback called")
     console.log("connectedCallback called")
   }
-  componentWillLoad(){
+  componentWillLoad(){  //one time
     alert("componentWillLoad called")
     console.log("componentWillLoad called")
   }
-  componentWillRender(){
+  componentWillRender(){  //
     alert("componentWillRender called")
     console.log("componentWillRender called")
   }
@@ -50,7 +50,7 @@ export class LoginPage {
     alert("componentDidUpdate called")
     console.log("componentDidUpdate called");
 
-    // (this.el.shadowRoot.querySelector('button') as HTMLButtonElement).style.backgroundColor = 'red'
+    (this.el.shadowRoot.querySelector('button') as HTMLButtonElement).style.backgroundColor = 'red'
     
   }
   disconnectedCallback(){
@@ -84,7 +84,7 @@ export class LoginPage {
             <input type="text" placeholder='Enter VIN,Year,Make,Model'/>
             <button>search</button>
             <div slot='content'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor dolores facere consequuntur ex, commodi nihil illum veniam reiciendis, laboriosam reprehenderit debitis! Porro, dolores nemo! Facere praesentium vero totam officiis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor dolores facere consequuntur ex, commodi nihil illum veniam reiciendis, laboriosam reprehenderit debitis! Porro, dolores nemo! Facere praesentium vero totam officiis.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eum. Omnis recusandae quaerat rem esse odit? Facere asperiores accusantium tempora iusto sequi velit dolorum iste enim, nihil repellendus tempore quibusdam.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi laborum iure et dolore facere excepturi deserunt, aliquam accusamus reprehenderit earum. Sed iste id cum quos nostrum velit in. Aspernatur, pariatur.
             </div>

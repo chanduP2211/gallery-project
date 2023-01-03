@@ -31,7 +31,7 @@ export class GalleryGrid {
       <Host>
       <div class='parent'></div>
       <div class='baseParent'>
-      <div class='cancel' onClick={()=>this.dataShowed.emit("cancel")}>
+      <div class='cancel' onClick={()=>this.dataShowed.emit("false")}>
           <span >x</span>
          </div>
          <div class='base'>

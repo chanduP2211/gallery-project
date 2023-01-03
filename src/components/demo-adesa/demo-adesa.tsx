@@ -10,8 +10,9 @@ export class DemoAdesa {
   @State() valid:boolean = false;
   @Prop() user:string;
   @Listen('dataShowed', { target: 'window' })
-  handleScroll() {
+  handleScroll(event:CustomEvent) {
    this.valid = false;
+   console.log(event.detail)
   }
   render() {
 
