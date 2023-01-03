@@ -1,4 +1,4 @@
-import { Component, Host, h, State, Listen } from '@stencil/core';
+import { Component, Host, h, State, Listen, Prop } from '@stencil/core';
 
 @Component({
   tag: 'demo-adesa',
@@ -8,7 +8,7 @@ import { Component, Host, h, State, Listen } from '@stencil/core';
 export class DemoAdesa {
 
   @State() valid:boolean = false;
-
+  @Prop() user:string;
   @Listen('dataShowed', { target: 'window' })
   handleScroll() {
    this.valid = false;
@@ -24,7 +24,7 @@ export class DemoAdesa {
             </div>
             <div></div>
             <div class="logout">
-              <li>Welcome Jesica|Logout</li>
+              <li>Welcome {this.user}</li>
               <li>Customer Support</li>
               <li class='select'>
                 <select name="" id="">
@@ -47,8 +47,8 @@ export class DemoAdesa {
             </ul>
           </div>
           <div class="child child3">
-            <input type="text" placeholder='Enter VIN,Year,Make,Model'/>
-            <button>search</button>
+            <slot/>
+            //////////////////
           </div>
           <div class="child childi">
            <div class="child child4">
@@ -79,9 +79,7 @@ export class DemoAdesa {
               <li class='list4 list'>Show Retail View</li>
             </ul>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor dolores facere consequuntur ex, commodi nihil illum veniam reiciendis, laboriosam reprehenderit debitis! Porro, dolores nemo! Facere praesentium vero totam officiis.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eum. Omnis recusandae quaerat rem esse odit? Facere asperiores accusantium tempora iusto sequi velit dolorum iste enim, nihil repellendus tempore quibusdam.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi laborum iure et dolore facere excepturi deserunt, aliquam accusamus reprehenderit earum. Sed iste id cum quos nostrum velit in. Aspernatur, pariatur.
+            <slot name='content'/>
             </div>
             </div>
           </div>
