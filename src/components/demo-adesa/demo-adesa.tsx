@@ -49,7 +49,6 @@ export class DemoAdesa {
           </div>
           <div class="child child3">
             <slot/>
-            //////////////////
           </div>
           <div class="child childi">
            <div class="child child4">
